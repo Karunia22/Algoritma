@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -123,7 +122,7 @@ public class algorismsACO {
                         }
                     }
                     alamat.add(destinasi);
-                } // Selesai mencari jalur
+                } 
                 alamat.add(depot);
                 for (int j = 0; j < alamat.size() - 1; j++) {
                     int ori = alamat.get(j);
@@ -143,7 +142,7 @@ public class algorismsACO {
                     int destinasi = alamat.get(j+1);
                     deltaTau[ori][destinasi] += Q / (double) totalJarakSementara;
                 }
-            } // Setelah semut selesai melalui jalur
+            } 
     
             for (int i = 0; i < tau.length; i++) {
                 for (int j = 0; j < deltaTau.length; j++) {
